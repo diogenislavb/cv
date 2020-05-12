@@ -1,0 +1,305 @@
+body{
+color: #40514E;
+margin: 0;
+padding-bottom: 30px;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+}
+
+hr{
+border :dotted #EAF6F6 6px;
+border-bottom: none;
+width: 4%;
+margin :150px auto;
+}
+
+.intro{
+  width: 30%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+
+
+ .top-container{
+
+  background-color: #def4f0;
+  position: relative;
+  padding-top: 200px;
+
+}
+.mountain{
+  padding-bottom: 30px;
+}
+
+.middle-container{
+margin: 100px 0;
+}
+
+.bottom-container{
+position: relative;
+background-color: #66BFBF;
+padding-bottom: 50px;
+margin-top: 70px;
+padding-top: 50px;
+margin-bottom: 70px;
+
+
+}
+
+.copyright{
+  font-size: 1em;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer-link{
+  font-size: 1.3em;
+padding: 30px 30px;
+color :#11999E;
+text-decoration: none;
+}
+
+.footer-link:hover{
+  color: white;
+}
+
+.pro{
+  line-height: 2;
+  text-decoration: underline;
+}
+
+h1{
+  color: #66BFBF;
+  font-size: 5.625rem;
+  margin :50px auto 0 auto;
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+
+h2{
+  font-weight: normal;
+  color: #66BFBF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  color:  #66BFBF;
+
+}
+
+
+
+.top-cloud{
+position: absolute;
+right: 300px;
+top: 50px;
+}
+
+
+
+.bottom-cloud{
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+
+.skill-row{
+margin: 100px auto 100px auto;
+width: 50%;
+text-align: left;
+}
+
+.skill-photo{
+  border-radius: 100%;
+  width: 170px;
+  height: 160px;
+  float: left;
+  margin-right: 30px;
+}
+.skill2-photo{
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+  float: right;
+  margin-left: 30px;
+}
+
+img{
+  border-radius: 50%;
+  margin-top: 30px;
+}
+
+.contact-message{
+  width: 40%;
+  margin: 40px auto;
+}
+
+p
+{line-height: 2;}
+
+.myButton {
+	background-color:#66BFBF;;
+	border-radius:28px;
+	border:1px solid #66BFBF;;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #11999E;
+}
+.myButton:hover {
+	background-color:#11999E;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+/* animation tou programmer */
+
+a{
+  top:5px;
+  position: relative;
+  display: inline-block;
+  padding 15px 30px;
+  color :#66BFBF;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+a span {
+  position: absolute;
+  display: block;
+
+}
+
+a span:nth-child(1)
+{
+  top: 0;
+  left: -100%;
+  width:100%;
+  height:2px;
+  background: linear-gradient(90deg,transparent,#007892);
+}
+
+a:hover span:nth-child(1){
+  left: 100%;
+  transition: 1s;
+}
+
+a span:nth-child(2)
+{
+  top: -100%;
+  right:0;
+  width:2px;
+  height:100%;
+  background: linear-gradient(180deg,transparent,#007892);
+}
+
+a:hover span:nth-child(2){
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+a span:nth-child(3)
+{
+  bottom: 0;
+  right: -100%;
+  width:100%;
+  height:2px;
+  background: linear-gradient(270deg,transparent,#007892);
+}
+
+a:hover span:nth-child(3){
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+
+a span:nth-child(4)
+{
+  bottom: -100%;
+  left:0;
+  width:2px;
+  height:100%;
+  background: linear-gradient(360deg,transparent,#007892);
+}
+
+a:hover span:nth-child(4){
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+
+
+/* flip card */
+.maincontainer{
+  margin: auto;
+  position:relative;
+  width: 250px;
+  height: 320px;
+}
+
+
+.card{
+  position: absolute;
+  width: 250px;
+  height: 320px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+
+
+}
+
+.card:hover{
+  transform: rotateY(180deg);
+}
+
+.front{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+   background-image: url(https://scontent.fath3-4.fna.fbcdn.net/v/t1.0-9/s960x960/68862853_2744656192212345_5261537153250230272_o.jpg?_nc_cat=102&_nc_sid=dd7718&_nc_ohc=JH3vm_sTCdMAX-Syff3&_nc_ht=scontent.fath3-4.fna&_nc_tp=7&oh=f68758ed12f1222c028f32929405a1fc&oe=5EDE80B0);
+   background-size: cover;
+   box-shadow: -30px 30px 20px rgba(0,0,0,0.3);
+}
+
+
+.back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: white;
+  color: #11999E;
+  transform: rotateY(180deg);
+  box-shadow: -30px 30px 20px rgba(0,0,0,0.3);
+}
+
+
+#logo1 , #logo2 , #logo3{
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+#span {
+  font-size: 2em;
+  padding: 10px;
+  margin-top: 30px;
+}
